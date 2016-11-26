@@ -9,7 +9,7 @@ module ImpressionistController
 
   module InstanceMethods
     def self.included(base)
-      base.before_filter :impressionist_app_filter
+      base.before_action :impressionist_app_filter
     end
 
     def impressionist(obj,message=nil,opts={})
